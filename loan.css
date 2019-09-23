@@ -1,13 +1,13 @@
 body {
     font-family: Times New Roman, Helvetica, sans-serif;
-    background: #000000;
+    background: #FFFFFF;
 }
 
 #content {
     width: 600px;
     margin: 10px auto;
     padding: 5px 20px;
-    background: #FFFFFFF;
+    background: #FFFFFF;
     border: 1px solid #000000;
 }
 
