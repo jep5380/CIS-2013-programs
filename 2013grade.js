@@ -10,11 +10,11 @@ var intGradeOption, floatTotalPts, floatHwPts, floatMidPts, floatFinPts, stringF
 
 floatHwPts = parseFloat(prompt("Please enter final HW pts (0-30):"));
 
-floatMidPts = parseFloat(prompt("Please enter final MidTerm points: "));
+floatMidPts = parseFloat(prompt("Please enter final MidTerm points(0-35): "));
 
-floatFinPts = parseFloat(prompt("Please enter final points: " ));
+floatFinPts = parseFloat(prompt("Please enter final points(0-35): " ));
 
-floatTotalPts = parseFloat(??);
+floatTotalPts = parseFloat(floatHwPts+floatMidPts+floatFinPts);
 
 intGradeOption = parseFloat(prompt("Enter 1 for pass/fail grading option, enter 2 for regular grading option: "));
 
@@ -30,19 +30,21 @@ if (intGradeOption===1)
 }
 else if (intGradeOption===2)
 {
-    switch(floatTotalPts)
+    if(floatTotalPts >= 90)
     {
-        case floatTotalPts>=90:
-            stringFinalGrade = "A";
-        case floatTotalPts>=80&&floatTotalPts<90:
-            stringFinalGrade =  "B";
-        case floatTotalPts>=70&&floatTotalPts<80:
-            stringFinalGrade = "C";
-        case floatTotalPts>=60&&floatTotalPts<70:
-            stringFinalGrade = "D";
-        case floatTotalPts<60:
-            stringFinalGrade = "F";
-
+        stringFinalGrade = "A";
+    }
+    else if(floatTotalPts >= 80 && floatTotalPts < 90){
+        stringFinalGrade = "B";
+    }
+     else if(floatTotalPts >= 70 && floatTotalPts < 80){
+        stringFinalGrade = "C";
+    }
+      else if(floatTotalPts >= 60 && floatTotalPts < 70){
+        stringFinalGrade = "D";
+    }
+      else if(floatTotalPts < 60){
+        stringFinalGrade = "F";
     }
     
 }
