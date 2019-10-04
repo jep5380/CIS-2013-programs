@@ -22,10 +22,10 @@ if (intGradeOption===1)
 {
     if(floatTotalPts >= 80)
     {
-        return "pass";
+        stringFinalGrade = "pass";
     }
     else{
-        return "fail";
+        stringFinalGrade = "fail";
     }
 }
 else if (intGradeOption===2)
@@ -33,15 +33,15 @@ else if (intGradeOption===2)
     switch(floatTotalPts)
     {
         case floatTotalPts>=90:
-            return "A";
+            stringFinalGrade = "A";
         case floatTotalPts>=80&&floatTotalPts<90:
-            return "B";
+            stringFinalGrade =  "B";
         case floatTotalPts>=70&&floatTotalPts<80:
-            return "C";
+            stringFinalGrade = "C";
         case floatTotalPts>=60&&floatTotalPts<70:
-            return "D";
+            stringFinalGrade = "D";
         case floatTotalPts<60:
-            return "F";
+            stringFinalGrade = "F";
 
     }
     
