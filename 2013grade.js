@@ -8,7 +8,8 @@
 
 var intGradeOption, floatTotalPts, floatHwPts, floatMidPts, floatFinPts, stringFinalGrade;
 
-floatHwPts = parseFloat(prompt("Please enter final HW pts (0-30):"));
+floatHwPts = while(floatHwPts>30 || floatHwPts < 0)
+{ parseFloat(prompt("Please enter final HW pts (0-30):"))};
 
 floatMidPts = parseFloat(prompt("Please enter final MidTerm points(0-35): "));
 
