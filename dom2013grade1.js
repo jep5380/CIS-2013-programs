@@ -57,7 +57,7 @@ else if (intGradeOption===2)
 }
 
 
-$(final_grade).value=stringFInalGrade;
+$("final_grade").value=stringFinalGrade;
 };
 
 window.onload = function () 
