@@ -12,38 +12,40 @@ var calculateIncome = function ()
     {
     	if (floatAnnualIncome <= 30000)
     	{
-    		floatTaxRate = 2.5;
+    		floatTaxRate = 0.025;
     	}
     	else
     	{
     		if(floatAnnualIncome >= 30000 && floatAnnualIncome <= 75000)
     		{
-    			floatTaxRate = 5;
+    			floatTaxRate = 0.05;
     		}
     		else
     		{
-    			floatTaxRate =20;
+    			floatTaxRate = 0.20;
             }
     	}
     } 
     else
     {
-    	if (floatAnnualIncome <= 30000)
-    	{
-    		floatTaxRate = 5;
-    	}
-   		else if (floatAnnualIncome => 30000 && floatAnnualIncome <= 75000)
-   		{
-   			floatTaxRate = 10;
-   		}
-   		else
-   		{
-   			floatTaxRate = 20;
-   		}
-	}
-}
+        if (floatAnnualIncome <= 30000)
+        {   
+            floatTaxRate = 0.05;
+        }
+        else
+        {
+                if (floatAnnualIncome >= 30000 && floatAnnualIncome <= 75000)
+                {
+                    floatTaxRate = 0.10;
+                }
+                else
+                {
+                    floatTaxRate = 0.20;
+                }
+        }
+    }
 
-	floatAnnualTax = floatAnnualIncome * (floatTaxRate/100);
+	floatAnnualTax = floatAnnualIncome * (floatTaxRate);
 
 	$("annualTax").value = floatAnnualTax;
 
