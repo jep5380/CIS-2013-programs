@@ -51,7 +51,7 @@ var calculateIncome = function ()
 
 
 	alert ("Your annual income tax this year is $" + floatAnnualTax  +"\nBased upon an annual income of $"+ floatAnnualIncome+
-	"\nAnd a tax rate of " +floatTaxRate+ "% \nNote: Tax rate is based upon your age");
+	"\nAnd a tax rate of " +floatTaxRate*100 + "% \nNote: Tax rate is based upon your age");
 	
 }
 
