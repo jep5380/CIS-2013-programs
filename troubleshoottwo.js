@@ -21,12 +21,32 @@ var fixPrinter = function() {
      * to the user.  In this case, Y-Y-Y means
      * "the printer does NOT print"  AND "a red light is flashing" AND "the printer is unrecognized"
      */
-     switch (true) {  case boolprinting === true && boolRedLight === true && boolRecognised === true:    stringOutput = stringMessage2 + “\n” + stringMessage3 + “\n” + stringMessage4;    break;  case boolprinting === true && boolRedLight === true && boolRecognised === false:    stringOutput =     break;
-  case boolprinting === && boolRedLight === && boolRecognised === :    stringOutput = stringmessage_;    break;  case boolprinting === && boolRedLight === && boolRecognised === :    stringOutput = stringmessage_;    break;
-  case boolprinting === && boolRedLight === && boolRecognised === :    stringOutput = stringmessage_;    break;  case boolprinting === && boolRedLight === && boolRecognised === :    stringOutput = stringmessage_;    break; case boolprinting === && boolRedLight === && boolRecognised === :    stringOutput = stringmessage_;    break;
- default:
-    stringOutput = stringmessage_;
-    break;}
+     switch (true) {
+         case boolPrinting === true && boolRedLight === true && boolRecognised === true:
+             stringOutput = stringMessage2 + "and" + stringMessage3 + " and" + stringMessage4;
+             break;
+         case boolPrinting === true && boolRedLight === true && boolRecognised === false:
+             stringOutput = stringMessage4 + "and" + stringMessage5;
+             break;
+        case boolPrinting === true && boolRedLight === false && boolRecognised === true :
+             stringOutput = stringMessage1 + " and " + stringMessage2 + " and " + stringMessage3;
+             break;
+         case boolPrinting === true && boolRedLight === false && boolRecognised === false:
+             stringOutput = stringMessage5;
+             break;
+        case boolPrinting === false && boolRedLight === true && boolRecognised === true :
+             stringOutput = stringMessage4 + " and " + stringMessage5;
+             break;
+        case boolPrinting ===false && boolRedLight === false&& boolRecognised === true:
+             stringOutput = stringMessage4;
+             break;
+         case boolPrinting === false && boolRedLight === true && boolRecognised === false:
+             stringOutput = stringMessage3;
+             break;
+        default:
+            stringOutput = stringMessage6;
+            break;
+     }
 
 
     //enter your code here and don't forget to send the output to the DOM
