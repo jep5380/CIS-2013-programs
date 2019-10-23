@@ -24,6 +24,7 @@ var fixPrinter = function() {
     if(boolPrinting === true && boolRedLight === true && boolRecognised === true)
     {
         stringOutput = stringMessage2 + " and " + stringMessage3 + " and " + stringMessage4;
+        return stringOutput;
     }
     else if(boolPrinting === true && boolRedLight === true && boolRecognised === false)
     {
