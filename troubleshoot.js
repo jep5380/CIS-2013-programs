@@ -63,7 +63,7 @@ var fixPrinter = function() {
     }
 
     //enter your code here and don't forget to send the output to the DOM
-
+    $("output") = stringOutput;
 window.onload = function () {
     $("troubleshoot").onclick = fixPrinter;
 };
