@@ -47,6 +47,8 @@ var fixPrinter = function() {
             stringOutput = stringMessage6;
             break;
      }
+    $("output").value = stringOutput;
+};
 
 
     //enter your code here and don't forget to send the output to the DOM
