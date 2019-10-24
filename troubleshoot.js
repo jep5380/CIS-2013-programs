@@ -24,42 +24,34 @@ var fixPrinter = function() {
     if(boolPrinting === true && boolRedLight === true && boolRecognised === true)
     {
         stringOutput = stringMessage2 + " and " + stringMessage3 + " and " + stringMessage4;
-        return stringOutput;
     }
     else if(boolPrinting === true && boolRedLight === true && boolRecognised === false)
     {
         stringOutput = stringMessage4 + " and " + stringMessage5;
-        return stringOutput;
     }
     else if(boolPrinting === true && boolRedLight === false && boolRecognised === true)
     {
         stringOutput = stringMessage1 + " and " + stringMessage2 + " and " + stringMessage3;
-        return stringOutput;
     }
     else if(boolPrinting === true && boolRedLight === false && boolRecognised === false)
     {
         stringOutput = stringMessage5;
-        return stringOutput;
     }
     else if(boolPrinting === false && boolRedLight === true && boolRecognised === true)
     {
         stringOutput = stringMessage4 + " and " + stringMessage5;
-        return stringOutput;
     }
     else if(boolPrinting === false && boolRedLight === false && boolRecognised === true)
     {
         stringOutput = stringMessage4;
-        return stringOutput;
     }
     else if(boolPrinting === false && boolRedLight === true && boolRecognised === false)
     {
         stringOutput = stringMessage3;
-        return stringOutput;
     }
     else
     {
         stringOutput = stringMessage6;
-        return stringOutput;
     }
 
     //enter your code here and don't forget to send the output to the DOM
