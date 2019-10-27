@@ -107,30 +107,30 @@ function circleCircum(floatRadius_par)
 	var floatCircum = parseFloat (2 * Math.PI * floatRadius_par);
 	return floatCircum.toFixed(2);
 }
-function circleArea(floatRadius)
+function circleArea(floatRadius_par)
 {
-	var floatCircleArea = parseFloat(Math.PI * Math.pow(floatRadius,2));
+	var floatCircleArea = parseFloat(Math.PI * Math.pow(floatRadius_par,2));
 	return floatCircleArea.toFixed(2);
 };
-function triangleArea(floatTriSide1, floatTriSide2, floatTriSide3)
+function triangleArea(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
 {
-    var floatS = parseFloat((floatTriSide2 + floatTriSide2 + floatTriSide3)/2);
-	var floatTriangleArea = parseFloat(Math.sqrt((floatS*(floatS-floatTriSide1)*(floatS-floatTriSide2)*(floatS-floatTriSide3))));
+    var floatS = parseFloat((floatTriSide2_par + floatTriSide2_par + floatTriSide3_par)/2);
+	var floatTriangleArea = parseFloat(Math.sqrt((floatS*(floatS-floatTriSide1_par)*(floatS-floatTriSide2_par)*(floatS-floatTriSide3_par))));
 	return floatTriangleArea.toFixed(2);
 };
-function trianglePerim(floatTriSide1, floatTriSide2, floatTriSide3)
+function trianglePerim(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
 {
-	var floatTrianglePerim = parseFloat(floatTriSide1 + floatTriSide2 + floatTriSide3);
+	var floatTrianglePerim = floatTriSide1_par + floatTriSide2_par + floatTriSide3_par;
 	return floatTrianglePerim.toFixed(2);
 };
-function rectArea(floatRectWidth, floatRectHeight)
+function rectArea(floatRectWidth_par, floatRectHeight_par)
 {
-	var floatRectArea = parseFloat (floatRectWidth * floatRectHeight);
+	var floatRectArea = floatRectWidth_par * floatRectHeight_par;
 	return floatRectArea.toFixed(2);
 };
-function rectPerim(floatRectWidth, floatRectHeight)
+function rectPerim(floatRectWidth_par, floatRectHeight_par)
 {
-	var floatRectPerim = parseFloat(2 * floatRectWidth + 2 * floatRectHeight);
+	var floatRectPerim = parseFloat(2 * floatRectWidth_par + 2 * floatRectHeight_par);
 	return floatRectPerim.toFixed(2);
 };
 
@@ -147,10 +147,10 @@ window.onload = function ()
     $("rect_width").focus(); // places the cursor in the first input box
     $("calc_all").onclick = do_it; // runs the do_it function when clicked
     $("calc_circle_area").onclick = calcCircleArea;
-    $("calc_triangle_area").onclick = calcTriangleArea;
-    $("calc_triangle_perimeter").onclick = calcTrianglePerim;
-    $("calc_rectangle_area").onclick = calcRectArea;
-    $("calc_rectangle_perimeter").onclick = calcRectPerim;
+    $("calc_tri_area").onclick = calcTriangleArea;
+    $("calc_tri_perim").onclick = calcTrianglePerim;
+    $("calc_rect_area").onclick = calcRectArea;
+    $("calc_rect_perim").onclick = calcRectPerim;
     $("calc_circle_circum").onclick = calcCircleCircum; // runs the calcCircleCircum function when clicked
     
 };
