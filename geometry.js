@@ -8,7 +8,7 @@ var $ = function (id)
 //this function performs all the circle, triangle, and circle calculations and prints the results
 var do_it = function () 
 {
-
+-hgtr
 //lines 12-18 declares and sets variables with respective DOM input. lines 19-25 declare variables needed for calculations
 	var floatRectWidth = parseFloat($("rect_width").value);
 	var floatRectHeight = parseFloat($("rect_height").value);	
@@ -102,11 +102,11 @@ var calcRectPerim = function()
  * lops off everything after the desired decimal points, and then for some unexplicable reason converts
  * the resulting number into a string]
  */
-function circleCircum(floatRadius)
+function circleCircum(floatRadius_par)
 {
-	var floatCircleCircum = parseFloat (2 * Math.PI * floatRadius);
-	return floatCircleCircum.toFixed(2);
-};
+	var floatCircum = parseFloat (2 * Math.PI * floatRadius_par);
+	return floatCircum.toFixed(2);
+}
 function circleArea(floatRadius)
 {
 	var floatCircleArea = parseFloat(Math.PI * Math.pow(floatRadius,2));
