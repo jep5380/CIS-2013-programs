@@ -104,8 +104,8 @@ var calcRectPerim = function()
  */
 function circleCircum(floatRadius)
 {
-	var floatCircum = parseFloat (2 * Math.PI * floatRadius_par);
-	return floatCircum.toFixed(2);
+	var floatCircleCircum = parseFloat (2 * Math.PI * floatRadius);
+	return floatCircleCircum.toFixed(2);
 };
 function circleArea(floatRadius)
 {
@@ -146,6 +146,11 @@ window.onload = function ()
 //    $("radius").value = "";
     $("rect_width").focus(); // places the cursor in the first input box
     $("calc_all").onclick = do_it; // runs the do_it function when clicked
+    $("calc_circle_area").onclick = calcCircleArea;
+    $("calc_triangle_area").onclick = calcTriangleArea;
+    $("calc_triangle_perimeter").onclick = calcTrianglePerim;
+    $("calc_rectangle_area").onclick = calcRectArea;
+    $("calc_rectangle_perimeter").onclick = calcRectPerim;
     $("calc_circle_circum").onclick = calcCircleCircum; // runs the calcCircleCircum function when clicked
     
 };
