@@ -109,8 +109,8 @@ function circleCircum(floatRadius_par)
 }
 function circleArea(floatRadius_par)
 {
-	var floatCircleArea = parseFloat(Math.PI * Math.pow(floatRadius_par,2));
-	return floatCircleArea.toFixed(2);
+	var floatArea = parseFloat(Math.PI * Math.pow(floatRadius_par,2));
+	return floatArea.toFixed(2);
 };
 function triangleArea(floatTriSide1_par, floatTriSide2_par, floatTriSide3_par)
 {
