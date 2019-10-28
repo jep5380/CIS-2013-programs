@@ -8,7 +8,6 @@ var $ = function (id)
 //this function performs all the circle, triangle, and circle calculations and prints the results
 var do_it = function () 
 {
--hgtr
 //lines 12-18 declares and sets variables with respective DOM input. lines 19-25 declare variables needed for calculations
 	var floatRectWidth = parseFloat($("rect_width").value);
 	var floatRectHeight = parseFloat($("rect_height").value);	
@@ -56,7 +55,7 @@ var calcCircleCircum = function()
 };
 var calcCircleArea = function()
 {
-    var floatRadius = parseFloat($("area").value);
+    var floatRadius = parseFloat($("radius").value);
 
 	alert ("The Circle area is " + circleArea(floatRadius));	
 };
