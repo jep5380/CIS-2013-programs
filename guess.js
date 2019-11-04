@@ -11,7 +11,7 @@ var intMax, intMin, intRandom, intGuess, intCount;
  * number is at least 0.
 */
 intMin = parseInt(prompt("Choose the lowest number (but no lower than 0) in your guessing range"));
-while(intMin < 0)
+while(intMin < 0 || isNaN(intMin)
 {
     intMin = parseInt(prompt("Choose the lowest number (but no lower than 0) in your guessing range"));
 }
