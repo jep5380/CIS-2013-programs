@@ -80,6 +80,7 @@ while(intGame == 0)
 	    else
 	    {
 		 intGuess = parseInt(prompt("You have already guessed this number"));   
+		 intCount++;
 	    }
 	    while(intGuess < intMin || intGuess > intMax)
 	    {
