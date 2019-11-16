@@ -75,18 +75,17 @@ while(intGame == 0)
 			 intGuess = parseInt(prompt("Guess is too high. What is your guess on the random number between " + intMin + " and " + intMax));
 		    	 arrayGuessCheck[arrayGuessCheck.length] = intGuess;
 		    }
-		    intCount++;
 		    intGuess = parseInt(prompt("what is your guess on the random number between " + intMin + " and " + intMax));
 	    }
 	    else
 	    {
 		 intGuess = parseInt(prompt("You have already guessed this number"));   
-		 intCount++;
 	    }
 	    while(intGuess < intMin || intGuess > intMax)
 	    {
 		intGuess = parseInt(prompt("Your guess is not between " +intMin + " and " + intMax));   
 	    }
+	    intCount++;
 	}
 	// provides final output upon successful guessing
 	intPoints = (intMax-intMin)-intCount;
