@@ -1,4 +1,5 @@
 var intGame = 0;
+var intPoints = 0;
 while(intGame == 0)
 {
 	/* This program challenges the user to guess a randomly generated number
@@ -7,7 +8,7 @@ while(intGame == 0)
 	 * (such as choosing a number outside the high or low boundary of the range). 
 	 */
 
-	var intMax, intMin, intRandom, intGuess, intCount, intPoints, booleanGuessCheck;
+	var intMax, intMin, intRandom, intGuess, intCount, booleanGuessCheck;
 	var arrayGuessCheck = [];
 
 	/* the following section prompts the user to enter the low number of their guessing range
