@@ -53,21 +53,18 @@ while(intGuess != intRandom)
 {
     if( intGuess < intRandom)
     {
-        intGuess = parseInt(prompt("Guess is too low. What is your guess on the random number between " + intMin + " and " + intMax));
-        while(intGuess < intMin || intGuess > intMax)
-        {
-            intGuess = parseInt(prompt("Your guess is not between " +intMin + " and " + intMax));   
-        }
+         intGuess = parseInt(prompt("Guess is too low. What is your guess on the random number between " + intMin + " and " + intMax));
     }
     else
     {
-        intGuess = parseInt(prompt("Guess is too high. What is your guess on the random number between " + intMin + " and " + intMax));
-        while(intGuess < intMin || intGuess > intMax)
-        {
-            intGuess = parseInt(prompt("Your guess is not between " + intMin + " and " + intMax));   
-        }
+         intGuess = parseInt(prompt("Guess is too high. What is your guess on the random number between " + intMin + " and " + intMax));
     }
     intCount++;
+    intGuess = parseInt(prompt("what is your guess on the random number between " + intMin + " and " + intMax));
+    while(intGuess < intMin || intGuess > intMax)
+    {
+	intGuess = parseInt(prompt("Your guess is not between " +intMin + " and " + intMax));   
+    }	
 }
 // provides final output upon successful guessing
 alert("Congratulations!!! You guessed the correct number (" + intRandom +")\n" +
