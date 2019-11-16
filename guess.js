@@ -25,7 +25,7 @@ while(intGame == 0)
 	*/
 	intMax = parseInt(prompt("Choose the highest number in your guessing range(must be at least 2 more " +intMin + "):"));
 
-	while(isNaN(intMax) || intMax <= intMin+2)
+	while(isNaN(intMax) || intMax < intMin+2)
 	{
 	    intMax = parseInt(prompt("Choose the highest number in your guessing range(must be at least 2 more than your lowest number):"));
 	}
