@@ -56,7 +56,7 @@ while(intGame == 0)
 	while(intGuess != intRandom)
 	{
 	    booleanGuessCheck === false;
-	    for(j = 0; j < arrayGuessCheck.length; j++)
+	    for(var j = 0; j < arrayGuessCheck.length; j++)
 	    {
 		 if(intGuess === arrayGuessCheck[j])
 		 {
