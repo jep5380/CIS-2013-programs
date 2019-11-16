@@ -88,8 +88,8 @@ while(intGame == 0)
 	    intCount++;
 	}
 	// provides final output upon successful guessing
-	intPoints = (intMax-intMin)-intCount;
+	intPoints = intPoints + ((intMax-intMin)-intCount);
 	alert("Congratulations!!! You guessed the correct number (" + intRandom +")\n" +
-			" and it only took you " + intCount + " attempts! You earned " + intPoints + " points!");
+			" and it only took you " + intCount + " attempts! You earned " + intPoints + " points so far!");
 	intGame = parseInt(prompt("To play again enter 0, to stop playing enter 1"));
 }
