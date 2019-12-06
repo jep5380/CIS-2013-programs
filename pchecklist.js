@@ -41,3 +41,32 @@ window.onload = function ()
    $("password").focus();
    $("check_password").onclick = passwordCheckOld;
 };
+/*
+for(var intCount = 0; intCount < arrayBadPasswords.length();intCount++)
+   {
+        if(arrayBadPassword[intCount] === stringPassword)
+        {
+            booleanBadPassword == true;
+        }
+        if(stringPassword.length() < 8)
+        {
+            booleanBadPasswordTwo == true;
+        }
+   }
+   if(booleanBadPassword == true && booleanBadPasswordTwo == true)
+   {
+    alert("This is a bad password and it is less than 8 letters");
+   }
+   else if(booleanBadPassword == true)
+   {
+    alert("This is a bad password");
+   }
+   else if(booleanBadPasswordTwo == true)
+   {
+    alert("This is a password less than 8 letters");
+   }
+   else
+   {
+    alert("This is a good password");
+   }
+   */
