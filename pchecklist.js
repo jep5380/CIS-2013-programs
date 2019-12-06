@@ -18,34 +18,21 @@ var passwordCheckOld = function ()
   /* insert code
    * here
    */
-   
-   for(var intCount = 0; intCount < arrayBadPasswords.length();intCount++)
-   {
-        if(arrayBadPassword[intCount] === stringPassword)
+   if (stringPassword.length < 8)
+     {
+        stringOutput = “password is not long enough”;
+     }
+    else
+     {
+        for(var intCount = 0; intCount < arrayBadPasswords.length; intCount++)
         {
-            booleanBadPassword == true;
+          if (stringPassword == arrayBadPasswords[i])
+          {
+               stringOutput = “password is on the bad password list”;
+               break;
+          }
         }
-        if(stringPassword.length() < 8)
-        {
-            booleanBadPasswordTwo == true;
-        }
-   }
-   if(booleanBadPassword == true && booleanBadPasswordTwo == true)
-   {
-    alert("This is a bad password and it is less than 8 letters");
-   }
-   else if(booleanBadPassword == true)
-   {
-    alert("This is a bad password");
-   }
-   else if(booleanBadPasswordTwo == true)
-   {
-    alert("This is a password less than 8 letters");
-   }
-   else
-   {
-    alert("This is a good password");
-   }
+    }
 };
 
 window.onload = function () 
