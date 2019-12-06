@@ -38,11 +38,10 @@ var passwordCheckOld = function ()
         stringOutput="Looks like you have a good password!! Congrats!";
     }
 };
-
+$('output').value=stringOutput;
 window.onload = function () 
 {
-//    $("password").value = "";
-    $('output').value=stringOutput;
+// $("password").value = "";
    $("password").focus();
    $("check_password").onclick = passwordCheckOld;
 };
