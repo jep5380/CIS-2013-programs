@@ -20,7 +20,7 @@ var passwordCheckOld = function ()
    */
    if (stringPassword.length < 8)
      {
-        stringOutput = “password is not long enough”;
+        stringOutput = “Password is not long enough, it must be at least 8 characters”;
      }
     else
      {
@@ -28,16 +28,21 @@ var passwordCheckOld = function ()
         {
           if (stringPassword == arrayBadPasswords[i])
           {
-               stringOutput = “password is on the bad password list”;
+               stringOutput = “Password matches a 'bad password'. Please try again.”;
                break;
           }
         }
+    }
+    if(stringOutput!="Password matches a 'bad password'. Please try again." && stringOutput!="Password is not long enough, it must be at least 8 characters")
+    {
+        stringOutput="Looks like you have a good password!! Congrats!";
     }
 };
 
 window.onload = function () 
 {
 //    $("password").value = "";
+    $('output').value=stringOutput;
    $("password").focus();
    $("check_password").onclick = passwordCheckOld;
 };
